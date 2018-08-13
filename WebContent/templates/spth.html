@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- MetisMenu CSS -->
+<link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="../dist/css/sb-admin-2.min.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="../vendor/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation"
+			style="margin-bottom: 0">
+			<div class="navbar-header">
+				<!--             <i class="fa fa-user fa-fw"></i> -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-collapse">
+					<i class="fa fa-user fa-fw"></i> <span class="sr-only">Toggle
+						navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- 				<svg fill="#0088cc" height="48" viewBox="0 0 24 24" width="70" xmlns="http://www.w3.org/2000/svg"> -->
+				<!--     <path d="M0 0h24v24H0z" fill="none"/> -->
+				<!--     <path d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7C15.12 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5C7.34 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"/> -->
+				<!--                 </svg> -->
+
+				<a class="navbar-brand" href="commande.html">Validateur </a>
+
+				<!--                 <FONT CLASS="navbar-brand" font size="6"> </FONT> -->
+			</div>
+			<!-- /.navbar-header -->
+
+			<ul class="nav navbar-top-links navbar-right">
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i
+						class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-messages">
+						<li><a href="#">
+								<div>
+									<strong>John Smith</strong> <span class="pull-right text-muted">
+										<em>Yesterday</em>
+									</span>
+								</div>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit. Pellentesque eleifend...</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<strong>John Smith</strong> <span class="pull-right text-muted">
+										<em>Yesterday</em>
+									</span>
+								</div>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit. Pellentesque eleifend...</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<strong>John Smith</strong> <span class="pull-right text-muted">
+										<em>Yesterday</em>
+									</span>
+								</div>
+								<div>Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit. Pellentesque eleifend...</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a class="text-center" href="#"> <strong>Read
+									All Messages</strong> <i class="fa fa-angle-right"></i>
+						</a></li>
+					</ul> <!-- /.dropdown-messages --></li>
+				<!-- /.dropdown -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-tasks fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-tasks">
+						<li><a href="#">
+								<div>
+									<p>
+										<strong>Task 1</strong> <span class="pull-right text-muted">40%
+											Complete</span>
+									</p>
+									<div class="progress progress-striped active">
+										<div class="progress-bar progress-bar-success"
+											role="progressbar" aria-valuenow="40" aria-valuemin="0"
+											aria-valuemax="100" style="width: 40%">
+											<span class="sr-only">40% Complete (success)</span>
+										</div>
+									</div>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<p>
+										<strong>Task 2</strong> <span class="pull-right text-muted">20%
+											Complete</span>
+									</p>
+									<div class="progress progress-striped active">
+										<div class="progress-bar progress-bar-info" role="progressbar"
+											aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+											style="width: 20%">
+											<span class="sr-only">20% Complete</span>
+										</div>
+									</div>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<p>
+										<strong>Task 3</strong> <span class="pull-right text-muted">60%
+											Complete</span>
+									</p>
+									<div class="progress progress-striped active">
+										<div class="progress-bar progress-bar-warning"
+											role="progressbar" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100" style="width: 60%">
+											<span class="sr-only">60% Complete (warning)</span>
+										</div>
+									</div>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<p>
+										<strong>Task 4</strong> <span class="pull-right text-muted">80%
+											Complete</span>
+									</p>
+									<div class="progress progress-striped active">
+										<div class="progress-bar progress-bar-danger"
+											role="progressbar" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100" style="width: 80%">
+											<span class="sr-only">80% Complete (danger)</span>
+										</div>
+									</div>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a class="text-center" href="#"> <strong>See
+									All Tasks</strong> <i class="fa fa-angle-right"></i>
+						</a></li>
+					</ul> <!-- /.dropdown-tasks --></li>
+				<!-- /.dropdown -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-bell fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-alerts">
+						<li><a href="#">
+								<div>
+									<i class="fa fa-comment fa-fw"></i> New Comment <span
+										class="pull-right text-muted small">4 minutes ago</span>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<i class="fa fa-twitter fa-fw"></i> 3 New Followers <span
+										class="pull-right text-muted small">12 minutes ago</span>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<i class="fa fa-envelope fa-fw"></i> Message Sent <span
+										class="pull-right text-muted small">4 minutes ago</span>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<i class="fa fa-tasks fa-fw"></i> New Task <span
+										class="pull-right text-muted small">4 minutes ago</span>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a href="#">
+								<div>
+									<i class="fa fa-upload fa-fw"></i> Server Rebooted <span
+										class="pull-right text-muted small">4 minutes ago</span>
+								</div>
+						</a></li>
+						<li class="divider"></li>
+						<li><a class="text-center" href="#"> <strong>See
+									All Alerts</strong> <i class="fa fa-angle-right"></i>
+						</a></li>
+					</ul> <!-- /.dropdown-alerts --></li>
+				<!-- /.dropdown -->
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> User
+								Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul> <!-- /.dropdown-user --></li>
+				<!-- /.dropdown -->
+			</ul>
+			<!-- /.navbar-top-links -->
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group -->
+						</li>
+
+
+						<li><a href="spth.html"><i class="fa fa-edit fa-fw"></i>
+								Cmd SPTH</a></li>
+						</li>
+						
+
+							
+
+					</ul>
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+			<!-- /.navbar-static-side -->
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="display-3">
+					<h1 class="well">Séquence de test : Mode STOC</h1>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-info" style="min-height: 180px;"
+						style="width: 40%">
+						<div class="panel-heading">Commandes Nominales</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-6">
+									<form role="form">
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Text Input</label> -->
+										<!--                                             <input class="form-control"> -->
+										<!--                                             <p class="help-block">Example block-level help text here.</p> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Text Input with Placeholder</label> -->
+										<!--                                             <input class="form-control" placeholder="Enter text"> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Static Control</label> -->
+										<!--                                             <p class="form-control-static">email@example.com</p> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>File input</label> -->
+										<!--                                             <input type="file"> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Text area</label> -->
+										<!--                                             <textarea class="form-control" rows="3"></textarea> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Checkboxes</label> -->
+										<!--                                             <div class="checkbox"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="checkbox" value="">Checkbox 1 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                             <div class="checkbox"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="checkbox" value="">Checkbox 2 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                             <div class="checkbox"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="checkbox" value="">Checkbox 3 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Inline Checkboxes</label> -->
+										<!--                                             <label class="checkbox-inline"> -->
+										<!--                                                 <input type="checkbox">1 -->
+										<!--                                             </label> -->
+										<!--                                             <label class="checkbox-inline"> -->
+										<!--                                                 <input type="checkbox">2 -->
+										<!--                                             </label> -->
+										<!--                                             <label class="checkbox-inline"> -->
+										<!--                                                 <input type="checkbox">3 -->
+										<!--                                             </label> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Radio Buttons</label> -->
+										<!--                                             <div class="radio"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                             <div class="radio"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                             <div class="radio"> -->
+										<!--                                                 <label> -->
+										<!--                                                     <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3 -->
+										<!--                                                 </label> -->
+										<!--                                             </div> -->
+										<!--                                         </div> -->
+										<!--                                         <div class="form-group"> -->
+										<!--                                             <label>Inline Radio Buttons</label> -->
+										<!--                                             <label class="radio-inline"> -->
+										<!--                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1 -->
+										<!--                                             </label> -->
+										<!--                                             <label class="radio-inline"> -->
+										<!--                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2 -->
+										<!--                                             </label> -->
+										<!--                                             <label class="radio-inline"> -->
+										<!--                                                 <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3 -->
+										<!--                                             </label> -->
+										<!--                                         </div> -->
+										<div class="form-group col-md-4">
+											<label>Prise</label> <select class="form-control">
+												<option>O</option>
+												<option>N</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4">
+											<label>Référence PTO</label> <select class="form-control">
+												<option>Rempli</option>
+												<option>Vide</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4">
+											<label>TypeCmdRetenu:</label> <select class="form-control">
+												<option>LOCA</option>
+												<option>COFI</option>
+												<option>AUTO</option>
+											</select>
+										</div>
+										<!-- test -->
+
+										<!-- test -->
+										<div class="form-group col-md-4">
+											<label>OC</label> <select class="form-control">
+												<option></option>
+												<option>FTEL</option>
+												<option>FREE</option>
+												<option>BOUY</option>
+												<option>VITIS</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4">
+											<label>OI</label> <select class="form-control">
+												<option></option>
+												<option>SPTH</option>
+												<option>VAUC</option>
+												<option>SIEL</option>
+												<option>SART</option>
+											</select>
+										</div>
+										<div class="form-group col-md-4" style="margin: -74px 300px;">
+											<label>Nbr cmd</label> <select class="form-control">
+												<option></option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+												<option>10</option>
+											</select>
+
+
+
+										</div>
+
+										<div class="form-group col-md-4" style="margin: -148px 450px;">
+											<label>Format</label> <select class="form-control">
+												<option></option>
+												<option>V1.2</option>
+												<option>V1.3</option>
+											</select>
+										</div>
+
+
+										<div class="form-group col-md-4" style="margin: -50px 450px;">
+											<button type="search" class="btn btn-success"
+												style="width: 140px;">Rechercher</button>
+										</div>
+
+
+
+
+										</select>
+
+
+
+										<!--                                  ici datatable -->
+										<!--                                    <div class="container"> -->
+										<!--                                        <div class="panel-body"> -->
+										<!-- 											<table width="100%"   -->
+										<!-- 												class="table table-striped table-bordered table-hover" -->
+										<!-- 												id="dataTables-example"> -->
+										<!-- 												<thead> -->
+										<!-- 													<tr> -->
+										<!-- 													<th>id</th> -->
+
+										<!-- 														<th> RefCmdPriseInterneOC</th> -->
+										<!-- 														<th>CommuneImmeuble</th> -->
+										<!-- 														<th> CodePostalImmeuble</th> -->
+										<!-- 														<th>CodeInseeImmeuble</th> -->
+										<!-- 														<th>CodeVoieRivoliImmeuble</th> -->
+										<!-- 														<th>NumeroVoieImmeuble</th> -->
+										<!-- 														<th>ComplementNumeroVoieImmeuble</th> -->
+										<!-- 														<th>TypeVoieImmeuble</th> -->
+										<!-- 														<th>LibelleVoieImmeuble</th> -->
+										<!-- 														<th>CodeAdresseImmeuble</th> -->
+										<!-- 														<th>Batiment</th> -->
+										<!-- 														<th>Escalier</th> -->
+										<!-- 														<th>Etage</th> -->
+										<!-- 														<th>TypeRacco</th> -->
+										<!-- 														<th>DateInstall</th> -->
+										<!-- 														<th>NomClient</th> -->
+										<!-- 														<th>PrenomClient</th> -->
+										<!-- 														<th>ContactClient1</th> -->
+										<!-- 														<th>ContactClient2</th> -->
+										<!-- 														<th>IdRdv</th> -->
+										<!-- 														<th>ReferencePrestationPm</th> -->
+										<!-- 														<th>ReferencePm</th> -->
+										<!-- 														<th>ReferencePrise</th> -->
+										<!-- 														<th>PriseExistante</th> -->
+										<!-- 														<th>TypeCommandeDemande</th> -->
+										<!-- 														<th>DateCommandePrise</th> -->
+										<!-- 														<th>CommentaireCmdAcces</th> -->
+										<!-- 														<th>Info Cmd Accès 1</th> -->
+										<!-- 														<th>Info Cmd Accès 2</th> -->
+										<!-- 														<th>Info Cmd Accès 3</th> -->
+										<!-- 														<th>Info Cmd Accès 4</th> -->
+										<!-- 														<th>Info Cmd Accès 5</th> -->
+										<!-- 														<th>Info Cmd Accès 6</th> -->
+										<!-- 														<th>Info Cmd Accès 7</th> -->
+										<!-- 														<th>Info Cmd Accès 8</th> -->
+										<!-- 													</tr> -->
+										<!-- 												</thead> -->
+										<!-- 												<tbody> -->
+										<!-- 													<tr class="odd gradeX"> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 				                         				<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 						                    			<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 											            <td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 														<td>test</td> -->
+										<!-- 													</tr> -->
+
+
+										<!-- 												</tbody> -->
+										<!-- 											</table> -->
+										<!-- 											/.table-responsive -->
+
+										<!--                                              </div> -->
+
+										<!--                                              </div> -->
+										<!--                                        fin datatable -->
+										<!-- test -->
+										<!--                                   <div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="dataTables-example_paginate"><ul class="pagination"><li class="paginate_button previous disabled" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_previous"><a href="#">Previous</a></li><li class="paginate_button active" aria-controls="dataTables-example" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">2</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">3</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">4</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">5</a></li><li class="paginate_button " aria-controls="dataTables-example" tabindex="0"><a href="#">6</a></li><li class="paginate_button next" aria-controls="dataTables-example" tabindex="0" id="dataTables-example_next"><a href="#">Next</a></li></ul></div></div> -->
+										<!-- fin test -->
+
+										<!--   <div class="form-group"> -->
+										<!--                                             <label>Multiple Selects</label> -->
+										<!--                                             <select multiple class="form-control"> -->
+
+										<!--                                             </select> -->
+										<!--                                         </div> -->
+
+
+										<!-- 										<button type="submit" class="btn btn-success">Générer -->
+										<!-- 											CMD_ACCES_V12</button> -->
+										<!-- 										<button type="reset" class="btn btn-success">Générer -->
+										<!-- 											CMD_ACCES_V13</button> -->
+									</form>
+								</div>
+								<!-- /.col-lg-6 (nested) -->
+								<!--                                 <div class="col-lg-6"> -->
+								<!--                                     <h1>Disabled Form States</h1> -->
+								<!--                                     <form role="form"> -->
+								<!--                                         <fieldset disabled> -->
+								<!--                                             <div class="form-group"> -->
+								<!--                                                 <label for="disabledSelect">Disabled input</label> -->
+								<!--                                                 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled> -->
+								<!--                                             </div> -->
+								<!--                                             <div class="form-group"> -->
+								<!--                                                 <label for="disabledSelect">Disabled select menu</label> -->
+								<!--                                                 <select id="disabledSelect" class="form-control"> -->
+								<!--                                                     <option>Disabled select</option> -->
+								<!--                                                 </select> -->
+								<!--                                             </div> -->
+								<!--                                             <div class="checkbox"> -->
+								<!--                                                 <label> -->
+								<!--                                                     <input type="checkbox">Disabled Checkbox -->
+								<!--                                                 </label> -->
+								<!--                                             </div> -->
+								<!--                                             <button type="submit" class="btn btn-primary">Disabled Button</button> -->
+								<!--                                         </fieldset> -->
+								<!--                                     </form> -->
+								<!--                                     <h1>Form Validation States</h1> -->
+								<!--                                     <form role="form"> -->
+								<!--                                         <div class="form-group has-success"> -->
+								<!--                                             <label class="control-label" for="inputSuccess">Input with success</label> -->
+								<!--                                             <input type="text" class="form-control" id="inputSuccess"> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group has-warning"> -->
+								<!--                                             <label class="control-label" for="inputWarning">Input with warning</label> -->
+								<!--                                             <input type="text" class="form-control" id="inputWarning"> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group has-error"> -->
+								<!--                                             <label class="control-label" for="inputError">Input with error</label> -->
+								<!--                                             <input type="text" class="form-control" id="inputError"> -->
+								<!--                                         </div> -->
+								<!--                                     </form> -->
+								<!--                                     <h1>Input Groups</h1> -->
+								<!--                                     <form role="form"> -->
+								<!--                                         <div class="form-group input-group"> -->
+								<!--                                             <span class="input-group-addon">@</span> -->
+								<!--                                             <input type="text" class="form-control" placeholder="Username"> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group input-group"> -->
+								<!--                                             <input type="text" class="form-control"> -->
+								<!--                                             <span class="input-group-addon">.00</span> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group input-group"> -->
+								<!--                                             <span class="input-group-addon"><i class="fa fa-eur"></i> -->
+								<!--                                             </span> -->
+								<!--                                             <input type="text" class="form-control" placeholder="Font Awesome Icon"> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group input-group"> -->
+								<!--                                             <span class="input-group-addon">$</span> -->
+								<!--                                             <input type="text" class="form-control"> -->
+								<!--                                             <span class="input-group-addon">.00</span> -->
+								<!--                                         </div> -->
+								<!--                                         <div class="form-group input-group"> -->
+								<!--                                             <input type="text" class="form-control"> -->
+								<!--                                             <span class="input-group-btn"> -->
+								<!--                                                 <button class="btn btn-default" type="button"><i class="fa fa-search"></i> -->
+								<!--                                                 </button> -->
+								<!--                                             </span> -->
+								<!--                                         </div> -->
+								<!--                                     </form> -->
+								<!--                                 </div> -->
+								<!-- /.col-lg-6 (nested) -->
+							</div>
+							<!-- /.row (nested) -->
+						</div>
+						<!-- /.panel-body -->
+					</div>
+
+
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-lg-12 -->
+
+
+
+				<!-- databale1 test -->
+
+				<div class="col-lg-12">
+					<div class="row">
+
+						<div class="col-md-12 col-md-offset-0">
+
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col col-xs-6">
+											<h3 class="panel-title">Database</h3>
+										</div>
+										<div class="col col-xs-6 text-right">
+											<!-- 												<button type="button" -->
+											<!-- 													class="btn btn-sm btn-primary btn-create">Create -->
+											<!-- 													New</button> -->
+										</div>
+									</div>
+								</div>
+								<div class="panel-body table-responsive">
+									<table class="table table-striped table-bordered table-list">
+										<thead>
+											<tr>
+												<th><em class="fa fa-cog"></em></th>
+												<th class="hidden-xs">ID</th>
+												<th>File Name</th>
+												<th>Artist</th>
+												<th>Composer</th>
+												<th>Publisher</th>
+												<th>Genre</th>
+												<th>Bitrate</th>
+											</tr>
+										</thead>
+										<tbody id="myTable">
+
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">1</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">2</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">3</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">4</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">5</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">5</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">5</td>
+												<td>myMp3</td>
+												<td>amart</td>
+												<td>am compo</td>
+												<td>ampub</td>
+												<td>amgen</td>
+												<td>ambit</td>
+											</tr>
+											<tr>
+												<td align="center"><a class="btn btn-default"><em
+														class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+														class="fa fa-trash"></em></a></td>
+												<td class="hidden-xs">5</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+												<td>test</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<div class="panel-footer">
+									<div class="row">
+
+										<!-- 	<div class="col col-xs-3">Page 1 of 5</div> -->
+										<!-- class="btn btn-primary" style="margin-left: 75%;" -->
+
+										<!-- style="margin: -74px 300px;" -->
+										<button type="generer" class="btn btn-success"
+											style="width: 160px; margin: 2px 140px;">Générer
+											CMD_ACCES</button>
+
+										<button type="next" class="btn btn-info"
+											style="width: 150px; margin: 0px 140px;">Suivant</button>
+
+
+
+
+
+
+										<div class="col col-xs-5">
+											<ul class="pagination hidden-xs pull-right" id="myPager">
+											</ul>
+											<ul class="pagination visible-xs pull-right">
+												<li><a href="#">«</a></li>
+												<li><a href="#">»</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+							</div>
+
+						</div>
+					</div>
+					<!-- tester -->
+
+
+					<!-- fin test -->
+				</div>
+
+
+				<!-- fin test -->
+
+
+
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery -->
+	<script src="../vendor/jquery/jquery.min.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
+	<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="../dist/js/sb-admin-2.js"></script>
+	<!-- DataTables JavaScript -->
+	<script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+	<script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+
+</body>
+
+</html>
+
+

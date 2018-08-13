@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+
+
+<!-- <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/> -->
+<!--     <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script> -->
+<!--     <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script> -->
+<!--     <link rel="stylesheet" href="/webjars/font-awesome/css/font-awesome.min.css"></link>	 -->
+
+
+
+
+<title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+<!-- Bootstrap Core CSS -->
+<!-- <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+<!-- <!-- MetisMenu CSS -->
+<!-- <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet"> -->
+
+<!-- <!-- Custom CSS -->
+<!-- <link href="../../dist/css/sb-admin-2.css" rel="stylesheet"> -->
+<!-- <!-- Custom CSS -->
+<!-- <link href="../../dist/css/sb-admin-2.min.css" rel="stylesheet"> -->
+<!-- <!-- Custom Fonts -->
+<!-- <link href="../../vendor/font-awesome/css/font-awesome.min.css" -->
+<!-- 	rel="stylesheet" type="text/css"> -->
+
+
+
+
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="navbar-header">
+
+
+				<!-- 				<a class="navbar-brand" href="commande.html">Validateur </a> -->
+
+				<div class="navbar-brand">
+
+					<a href="commande.html"><i class="fa fa-dashboard fa-fw"></i>
+						Validateur</a>
+				</div>
+
+				<!-- 				 style="margin: 300px 50px;" -->
+
+			</div>
+
+			<ul class="nav navbar-top-links navbar-right">
+				<li class="dropdown">
+				<li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#"> <i class="fa fa-user fa-fw"></i>
+						<i class="fa fa-caret-down"></i>
+				</a>
+					<ul class="dropdown-menu dropdown-user">
+						<li><a href="#"><i class="fa fa-user fa-fw"></i> User
+								Profile</a></li>
+						<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+						</li>
+						<li class="divider"></li>
+						<li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>
+								Logout</a></li>
+					</ul></li>
+			</ul>
+
+			<!-- *************************************************************************** -->
+			<!-- /.navbar-top-links -->
+
+			<div class="navbar-default sidebar" role="navigation">
+				<div class="sidebar-nav navbar-collapse">
+					<ul class="nav" id="side-menu">
+						<li class="sidebar-search">
+							<div class="input-group custom-search-form">
+								<input type="text" class="form-control" placeholder="Search...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button">
+										<i class="fa fa-search"></i>
+									</button>
+								</span>
+							</div> <!-- /input-group -->
+						</li>
+
+
+						<li><a href="commande.html"><i class="fa fa-edit fa-fw"></i>
+								Cmd Nominale</a></li>
+						</li>
+						<li><a href="spth.html"><i class="fa fa-edit fa-fw"></i>
+								Cmd SPTH</a></li>
+						</li>
+						<li><a href="annulation.html"><i class="fa fa-edit fa-fw"></i>
+								Cmd Annulation</a></li>
+						</li>
+						<li><a href="resiliation.html"><i
+								class="fa fa-edit fa-fw"></i> Cmd Resiliation</a></li>
+						</li>
+						<li><a href="reprov-a-froid.html"><i
+								class="fa fa-edit fa-fw"></i> Reprov-a-froid </a></li>
+						</li>
+						<li><a href="reprov-a-chaud.html"><i
+								class="fa fa-edit fa-fw"></i> Reprov-a-chaud </a></li>
+						</li>
+					</ul>
+
+				</div>
+				<!-- /.sidebar-collapse -->
+			</div>
+
+
+			<!-- /.navbar-static-side -->
+		</nav>
+
+		<div id="page-wrapper">
+			<div class="panel-heading">
+				<div class="display-3">
+					<h1 class="well">
+						<p class="text-info">Séquence de test : Mode STOC</p>
+					</h1>
+					<!-- 					<p class="text-info">.text-info</p> -->
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="col-md-12 col-md-offset-0">
+
+						<div class="panel panel-info">
+							<div class="panel-heading">Commandes Nominales</div>
+							<div class="panel-body">
+								<div class="row">
+
+									<div class="col-md-12 col-md-offset-0">
+										<form th:action="@{/commande}" role="form" method="post" id="search">
+                                            <!-- <input hidden="true" name="priseOn" value="${priseOn.value}"/> -->
+<!--                                             <input hidden="true" name="referencePto" value="{${referencePto.value }}"/>
+                                            <input hidden="true" name="TypeCmdRetenu" value="${TypeCmdRetenu.value }"/>
+                                            <input hidden="true" name="oc" value="{${oc.value}"/>
+                                            <input hidden="true" name="oi" value="${oi.value}">
+                                            <input hidden="true" name="nbrCmd" value="${nbrCmd.value}"/>
+                                            <input hidden="true" name="format" value="${format.value}"/> -->
+											<div class="form-group col-md-3">
+												<label>Prise</label> 
+													<select class="form-control" id="priseOn" name="priseOn" form="search">
+													<option>O</option>
+													<option>N</option>
+													</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label>Référence PTO</label> 
+												<select class="form-control" id="referencePto" name="referencePto" form="search">
+													<option>Rempli</option>
+													<option>Vide</option>
+												</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label>TypeCmdRetenu:</label>
+												 <select class="form-control" id="TypeCmdRetenu" name="TypeCmdRetenu" form="search">
+													<option>LOCA</option>
+													<option>COFI</option>
+													<option>AUTO</option>
+												</select>
+											</div>
+											<!-- test -->
+
+											<!-- test -->
+											<div class="form-group col-md-3">
+												<label>OC</label> <select class="form-control" id="oc" name="oc" form="search">
+													<option></option>
+													<option>FTEL</option>
+													<option>FREE</option>
+													<option>BOUY</option>
+													<option>VITIS</option>
+												</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label>OI</label> <select class="form-control" id="oi" name="oi" form="search">
+													<option></option>
+													<option>SPTH</option>
+													<option>VAUC</option>
+													<option>SIEL</option>
+													<option>SART</option>
+												</select>
+											</div>
+											<div class="form-group col-md-3">
+												<label>Nbr cmd</label> <select class="form-control" id="nbrCmd" name="nbrCmd" form="search">
+													<option></option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>10</option>
+												</select>
+
+
+											</div>
+
+											<div class="form-group col-md-3">
+
+												<label>Format</label> <select class="form-control" id="format" name="format" form="search">
+													<option></option>
+													<option>V1.2</option>
+													<option>V1.3</option>
+												</select>
+
+											</div>
+
+
+											<div class="form-group col-md-3" align="right" width="100"
+												height="88">
+
+												<button type="submit" class="btn btn-secondary"
+													style="color: #408080">
+													<B>Search</B> <span class="glyphicon glyphicon-search"
+														style="color: #1a1a1a"></span>
+												</button>
+
+											</div>
+
+
+											</form>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+					<!-- databale1 test -->
+
+
+
+					<div class="col-md-12 col-md-offset-0">
+
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col col-xs-6">
+										<h3 class="panel-title">Database</h3>
+									</div>
+									<div class="col col-xs-6 text-right"></div>
+								</div>
+							</div>
+
+
+
+
+							<div class="panel-body table-responsive">
+								<table class="table table-striped table-bordered table-list">
+									<thead>
+										<tr>
+											<th><em class="fa fa-cog"></em></th>
+
+											<th class="hidden-xs">ID</th>
+											<th class="hidden-xs">ReferenceCommandePriseInterneOC</th>
+											<th class="hidden-xs">CommuneImmeuble</th>
+											<th class="hidden-xs">CodePostalImmeuble</th>
+											<th class="hidden-xs">CodeInseeImmeuble</th>
+											<th class="hidden-xs">CodeVoieRivoliImmeuble</th>
+											<th class="hidden-xs">NumeroVoieImmeuble</th>
+											<th class="hidden-xs">ComplementNumeroVoieImmeuble</th>
+											<th class="hidden-xs">TypeVoieImmeuble</th>
+											<th class="hidden-xs">LibelleVoieImmeuble</th>
+											<th class="hidden-xs">CodeAdresseImmeuble</th>
+											<th class="hidden-xs">Batiment</th>
+											<th class="hidden-xs">Escalier</th>
+											<th class="hidden-xs">Etage</th>
+											<th class="hidden-xs">TypeRacco</th>
+											<th class="hidden-xs">DateInstall</th>
+											<th class="hidden-xs">NomClient</th>
+											<th class="hidden-xs">PrenomClient</th>
+											<th class="hidden-xs">ContactClient1</th>
+											<th class="hidden-xs">ContactClient2</th>
+											<th class="hidden-xs">IdRdv</th>
+											<th class="hidden-xs">ReferencePrestationPm</th>
+											<th class="hidden-xs">ReferencePm</th>
+											<th class="hidden-xs">ReferencePrise</th>
+											<th class="hidden-xs">PriseExistante</th>
+											<th class="hidden-xs">TypeCommandeDemande</th>
+											<th class="hidden-xs">DateCommandePrise</th>
+											<th class="hidden-xs">CommentaireCmdAcces</th>
+											<th class="hidden-xs">InfoCmdAccès1</th>
+											<th class="hidden-xs">InfoCmdAccès2</th>
+											<th class="hidden-xs">InfoCmdAccès3</th>
+											<th class="hidden-xs">InfoCmdAccès4</th>
+											<th class="hidden-xs">InfoCmdAccès5</th>
+											<th class="hidden-xs">InfoCmdAccès6</th>
+											<th class="hidden-xs">InfoCmdAccès7</th>
+											<th class="hidden-xs">InfoCmdAccès8</th>
+										</tr>
+									</thead>
+									<tbody id="myTable">
+
+										<tr th:each="prise : ${prises}">
+											<td align="center"><a class="btn btn-default"><em
+													class="fa fa-pencil"></em></a> <a class="btn btn-danger"><em
+													class="fa fa-trash"></em></a></td>
+
+											<td th:text="${prise.ID}">ID</a></td>
+											<td th:text="${prise.ReferenceCommandePriseInterneOC}">ReferenceCommandePriseInterneOC</td>
+											<td th:text="${prise.CommuneImmeuble}">CommuneImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.CodePostalImmeuble}">CodePostalImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.CodeInseeImmeuble}">CodeInseeImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.CodeVoieRivoliImmeuble}">CodeVoieRivoliImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.NumeroVoieImmeuble}">NumeroVoieImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.ComplementNumeroVoieImmeuble}">ComplementNumeroVoieImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.TypeVoieImmeuble}">TypeVoieImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.LibelleVoieImmeuble}">LibelleVoieImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.CodeAdresseImmeuble}">CodeAdresseImmeuble
+											</th>
+											</td>
+											<td th:text="${prise.Batiment}">Batiment
+											</th>
+											</td>
+											<td th:text="${prise.Escalier}">Escalier
+											</th>
+											</td>
+											<td th:text="${prise.Etage}">Etage
+											</th>
+											</td>
+											<td th:text="${prise.TypeRacco}">TypeRacco
+											</th>
+											</td>
+											<td th:text="${prise.DateInstall}">DateInstall
+											</th>
+											</td>
+											<td th:text="${prise.NomClient}">NomClient
+											</th>
+											</td>
+											<td th:text="${prise.PrenomClient}">PrenomClient
+											</th>
+											</td>
+											<td th:text="${prise.ContactClient1}">ContactClient1
+											</th>
+											</td>
+											<td th:text="${prise.ContactClient2}">ContactClient2
+											</th>
+											</td>
+											<td th:text="${prise.IdRdv}">IdRdv
+											</th>
+											</td>
+											<td th:text="${prise.ReferencePrestationPm}">ReferencePrestationPm
+											</th>
+											</td>
+											<td th:text="${prise.ReferencePm}">ReferencePm
+											</th>
+											</td>
+											<td th:text="${prise.ReferencePrise}">ReferencePrise
+											</th>
+											</td>
+											<td th:text="${prise.PriseExistante}">PriseExistante
+											</th>
+											</td>
+											<td th:text="${prise.TypeCommandeDemande}">TypeCommandeDemande
+											</th>
+											</td>
+											<td th:text="${prise.DateCommandePrise}">DateCommandePrise
+											</th>
+											</td>
+											<td th:text="${prise.CommentaireCmdAcces}">CommentaireCmdAcces
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces1}">InfoCmdAcces1
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces2}">InfoCmdAcces2
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces3}">InfoCmdAcces3
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces4}">InfoCmdAcces4
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces5}">InfoCmdAcces5
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces6}">InfoCmdAcces6
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces7}">InfoCmdAcces7
+											</th>
+											</td>
+											<td th:text="${prise.InfoCmdAcces8}">InfoCmdAcces8
+											</th>
+											</td>
+
+
+
+										</tr>
+
+									</tbody>
+
+
+								</table>
+
+							</div>
+
+
+
+
+							<div class="panel-heading">
+
+								<button type="button" class="btn btn-secondary"
+									style="float: right;" onclick="location.href='depotcmd.html';">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVGhD7dbLKwVRHMDxq1goj4WU8spCkQVlQSywlJKd18JKKVaSshCl2MjCY8eSsvEHyKPsZEexU1KIkJWU1/enpm46986c+5g5p863Pou7OTO/7syZE3O5XC6XyxVOOZjDHbZRBSvrxk+cV/TDuoYQP4hnC/mwpkSDiDNUwIqSDSIe0A7j8xtEvKMXRhdkEPGJERhb0EHENyZhZDqDeBYh35+sJ9tmDdrQhzHMYhU7OMYF5EX+gupm/awjY8N0YRqbOMIl3qC6cDYsI+1kCHkBVRcI0zzS6gCqhaMwhZQqggn/hkd2s2Fo1wrVglH6QBO06oFqsagtQatOqBaKmmzzWpVDtVCUzlEI7a6hWjAKt0j5uL8A1aJhu0ctUq4UT1AtHpZHNCDtKjGAGWxgDye4wjNUF8+UFzQilPJQhnrIAVK2bflwTUAOkSs4hOpGk5EnoRlGpXuMv0EdjEtnEDldy+NsZEEHOUUJjC3IIPsogNH5DbKGXBhfokHkNDsKaxrE/yHk+NMCq6qGfNy8IXZRDCuTs9I4Ov5+uVwul8vlykax2C8aeFFiIUl65wAAAABJRU5ErkJggg=="
+										width="18%" height="15%"> <B>suivant</B>
+								</button>
+
+
+							<form th:action="@{/files/download}" role="form" method="post" >
+								<button  type="submit"  data-toggle="modal" data-target="#squarespaceModal"
+									class="btn btn-secondary center-block">
+
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP7SURBVGhD7dpbqBVVHMfxY1pammKIQYEPvgUGaZRCJGiXFwstyEAKAgUVLDARbxgigqL5JEqYD4r5kqBJilioaEjeQLEgwSzC1MpLqXlJs/z+ztl/+LNY+zhrzpp99sP+wQc9M+usPf+9Z2avtea0JWYQPsJhXMb/XXAL+/ACGpp3cQWxg+qKu/gYD6DyzEDsIHLajD6oLKPwL8IXPo2jJf2NsD/ZhYdRSfbCv9hJqLiuZDj+g+/XVFLMk/Av+BeGIEeOwxfgfYVHkC1vwr/AMuTKDvi+Q/vxKLJkKnzn7yFXtsP3HfMNshQzHb7jSciVIoVIlmKaoRBRMf1QOs1SiOzGQyiVZipEPkMPJKfZCpFpSE6Vhejd9X0X9SceQ1KqLOR5XILvv6h3kJQqC1F6Y2gdT0FD/A8QFjwHSam6kKKZCX8cc5GUZilEr+uPo1WIafpCHsezEUvhO1iAWLscBqNeChWiO0C9SU4jae4+C7EUKuQqfCPvFDSX3oivcQNhmx+xGnpDluMIbN9ZfF5zorbNfAvbd7O2TSszsRQqxDcwP2EswoyGb7cSsYGcHfSe9p86MhL2ezoD7FTStNa/QbGUKuQcnkAsk2Ht9M7HBnCaov4DtbmNAVB6QsMLbdc01zIO1qfEUqoQ/ZLlGXyBY9DpdRDWbhEsugloVUULB2vg+3sLlm3QNp2ClrB9LMmF6Hp5EIpmZX/A7/eWwPIydK3E2n0Ki4Yb2vZq+08dn6iuI98+luRCtIRpGQ+/L6RPya8O9oLm+Bfh2+lA7RR8GloqteWeEfBtJZbkQvTRW6bA74vR3Urnvo8Ge+GdUAesqPAvO/7bnoXw7SSW5EI0nbS8Ar+vnu/xBvyFr7uZbzMPlhdr/yr+mjOxJBei08JOF73TOn38/s6shUXLRn6fFg/C6M6oL0HfTmJJLkQmwNIfH2JV7d+dsHY6uOewAlsxERbdxXyfWjsOZ3X1Tt1YShXyCzT2iuV9WLvF2hCJviC/g+9T3oaPig/bSCylCpGf8Rr8haxrQJ+KtdEzDc3wfPQgSEMa35fZAIseH1xDrF0shQr5Hb6Rp2vmAA7hQm1buF/DEC0kaOH5OsI2RteDvjTlfG1b6AxiKVSI7jjhl1J3+BWvI5ZChXSW1gwxc1qFWFqFZE72QpKXKjMlLGQ2kqJvY9/BfHRHtCjhj0N/vJAUzR98B5o89UUjo1GAHon749Dj7eT8AN/JFgxEI6L5fjjk0ZsZWyu4b8LTSzSs0dhJj6ursh6/IXzt5NPKRwcddtgdNqHUp2HRgsQniHXeKOtQ+mFomDHQKFfrVbEXy+0OtMKpaXcl0TPvYXgJWgrKTf2q/4J/KNDWdg83iKP8V08pugAAAABJRU5ErkJggg=="
+										width="18%" height="15%"><B> Cmd_Acces</B>
+								</button>
+							</form>
+
+
+
+
+							</div>
+
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+				<!-- /.row -->
+			</div>
+			<!-- /#page-wrapper -->
+
+		</div>
+		<!-- /#wrapper -->
+
+		<!-- jQuery -->
+		<script src="../../vendor/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Metis Menu Plugin JavaScript -->
+		<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+		<!-- Custom Theme JavaScript -->
+		<script src="../dist/js/sb-admin-2.js"></script>
+
+
+
+
+		<!-- DataTables JavaScript -->
+
+		<!-- 		<script src="../vendor/datatables/js/jquery.dataTables.min.js"></script> -->
+		<!-- 		<script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script> -->
+		<!-- 		<script src="../vendor/datatables-responsive/dataTables.responsive.js"></script> -->
+
+
+
+		<!-- 		<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+		<!-- jQuery library -->
+		<!-- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+		<!-- Latest compiled JavaScript -->
+		<!-- 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+
+
+
+		<link rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+		<!-- a rajoute -->
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/css/sb-admin-2.css">
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/css/sb-admin-2.min.css">
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/js/sb-admin-2.min.js">
+
+
+
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-sb-admin-2/3.3.7+1/css/sb-admin-2.css>
+
+  <link rel="
+			stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.7.7/metisMenu.css">
+
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- fin -->
+</body>
+
+
+<script type="text/javascript">
+	if (browser.viewport.zoom > 1) {
+		browser.window.dezoom("a lot");
+	} else if (browser.viewport.zoom < 1) {
+		browser.window.zoom("a little");
+	} else {
+		browser.window.navigator.dontZoom("at all");
+	}
+</script>
+</div>
+</body>
+
+</html>
+
+
